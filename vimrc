@@ -227,7 +227,11 @@ endfunction
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-call plug#begin('~/.vim/plugged')
+if has('nvim')
+  call plug#begin('~/.local/share/nvim/plugged')
+else
+  call plug#begin('~/.vim/plugged')
+endif
 
 " Make sure you use single quotes
 
