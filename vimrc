@@ -236,8 +236,8 @@ endif
 " Make sure you use single quotes
 
 Plug 'jremmen/vim-ripgrep'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'commit': 'e1582b8323a70785d7ebefce993df7474a28e749'}
+Plug 'junegunn/fzf.vim', { 'commit': 'd3b9fed9c2415a2682cb1c8604e25a351325c22b'}
 
 call plug#end()
 
