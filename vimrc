@@ -268,7 +268,7 @@ call plug#end()
 " map ctrl+p to fzf
 map <C-p> :Files<cr>
 
-" map ctrl+P to ripgrep
+" map ctrl+o to ripgrep
 map <C-o> :Rg 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -289,6 +289,7 @@ if hostname == "kiwi"
     let base16colorspace=256
 elseif hostname == "st-julia2.lan"
     let base16colorspace=256
+    let g:fzf_launcher = "~/bin/macvim-iterm2 %s"
 endif
 colorscheme base16-solarized-light
 
