@@ -257,6 +257,7 @@ Plug 'junegunn/fzf', { 'commit': 'e1582b8323a70785d7ebefce993df7474a28e749'}
 Plug 'junegunn/fzf.vim', { 'commit': 'd3b9fed9c2415a2682cb1c8604e25a351325c22b'}
 Plug 'chriskempson/base16-vim', { 'commit': '2d991f14f688a38b7b2bcd397bad5efadd0f80a9'}
 Plug 'mhinz/vim-startify'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -285,6 +286,8 @@ autocmd VimLeave * :mksession! ~/.vim/sessions/last.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let hostname = substitute(system('hostname'), '\n', '', '')
 if hostname == "kiwi"
+    let base16colorspace=256
+elseif hostname == "st-julia2.lan"
     let base16colorspace=256
 endif
 colorscheme base16-solarized-light
